@@ -1,0 +1,8 @@
+C:\Users\noname\source\repos\VinImport\VinImport\bin\Debug\VinImport.exe.config
+C:\Users\noname\source\repos\VinImport\VinImport\bin\Debug\VinImport.exe
+C:\Users\noname\source\repos\VinImport\VinImport\bin\Debug\VinImport.pdb
+C:\Users\noname\source\repos\VinImport\VinImport\obj\Debug\VinImport.csproj.AssemblyReference.cache
+C:\Users\noname\source\repos\VinImport\VinImport\obj\Debug\VinImport.csproj.SuggestedBindingRedirects.cache
+C:\Users\noname\source\repos\VinImport\VinImport\obj\Debug\VinImport.csproj.CoreCompileInputs.cache
+C:\Users\noname\source\repos\VinImport\VinImport\obj\Debug\VinImport.exe
+C:\Users\noname\source\repos\VinImport\VinImport\obj\Debug\VinImport.pdb
