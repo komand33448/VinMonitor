@@ -1,0 +1,93 @@
+using System;
+
+namespace TestItSamfund
+{
+    class Program
+    {
+        static void Main()
+        {
+            string[] data = {GetTemp(), "|", GetNews(),
+                            "--------------------", "|", "--------------------",
+                             GetFugt(), "|", GetVare(),
+                             "================", "================", "================"};
+            int counter = 0;
+
+            for(int i = 0; i < 4; i++)
+            {
+                for(int j = 0; j < 3; j++)
+                {
+                    switch(counter)
+                    {
+                        case 1:
+                        case 4:
+                        case 7:
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            break;
+                        case 0:
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            break;
+                        case 6:
+                            Console.ForegroundColor = ConsoleColor.Blue;
+                            break;
+                        case 9:
+                        case 10:
+                        case 11:
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            break;
+                        default:
+                            Console.ForegroundColor = ConsoleColor.White;
+                            break;
+                    }
+
+                    Console.Write(data[counter]);
+                    counter++;
+                }
+                Console.WriteLine();
+            }
+        }
+
+        static string GetTemp()
+        {
+            string tempHolder = "temp = 32C";
+            while(tempHolder.Length != 20)
+            {
+                tempHolder = tempHolder + " ";
+            }
+
+            return tempHolder;
+        }
+
+        static string GetFugt()
+        {
+            string fugtHolder = "fugt = 60%";
+            while(fugtHolder.Length != 20)
+            {
+                fugtHolder = fugtHolder + " ";
+            }
+
+            return fugtHolder;
+        }
+
+        static string GetNews()
+        {
+            string newsHolder = "This is the locale news";
+            for(int i = 0; i < 3; i++)
+            {
+                newsHolder = " " + newsHolder;
+            }
+
+            return newsHolder;
+        }
+
+        static string GetVare()
+        {
+            string vareHolder = "udenfor grader n/a";
+            for(int i = 0; i < 3; i++)
+            {
+                vareHolder = " " + vareHolder;
+            }
+
+            return vareHolder;
+        }
+    }
+}
